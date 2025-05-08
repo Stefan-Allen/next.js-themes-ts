@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl'
 import { FC } from 'react'
 import ThemeSwitch from './ThemeSwitch'
 import Link from 'next/link'
+import LangSwitcher from '@/src/app/[locale]/components/LangSwitcher'
 
 interface Props {
   locale: string
@@ -30,6 +31,7 @@ export const Header: FC<Props> = ({ locale }) => {
           </Link>
         </nav>
         <ThemeSwitch />
+        {/* <LangSwitcher /> */}
       </div>
     </div>
   )
